@@ -1,0 +1,172 @@
+.ContentContainer {
+	display: grid;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 600px;
+	margin: 0px auto;
+	padding: 32px 24px 6rem 24px;// gap around
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 26px;
+
+	a {
+		text-align: center;
+		text-decoration: none;
+
+	} // a
+
+	// ~~ Stack Icon inside a tag ~~
+
+	.Icon {
+		height: 72px; // keep size while load
+		display: flex;
+		justify-content: center;
+		
+		img {
+			padding: 6px 0px;
+			height: 100%;
+			margin: 0px auto;
+
+		}
+
+		h3 {
+			line-height: 0;
+		}
+
+	} //
+
+	.Bg {
+		display: flex;
+		justify-content: center;
+
+ 		h3 {
+	 		box-shadow: 0px 0px 4px rgba(92,92,92,0);
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: black;
+
+ 		} // h3
+
+	} // Bg
+
+	// ~~ Fix Width Stretch ~~
+
+	.Settings, .Message {
+		img {
+			object-fit: contain;
+			padding: 12px 0px;
+		} // SVG
+	}
+
+	// ~~ Grid Layout ~~
+
+	.Connect {grid-column: 1 / span 4;grid-row: 1 / span 1;}
+	.Message {grid-column: 5 / span 4;grid-row: 1 / span 1;}
+	.Settings {grid-column: 9 / span 4;grid-row: 1 / span 1;}
+	
+	.Music {
+		grid-column: 1 / span 5;
+		grid-row: 2 / span 1;
+		background: url("../../resources/musicBg.jpg");
+		background-size: cover;
+		color: white;
+
+		h3 {
+			width: 120px;
+
+		}
+
+	} // Music
+	
+	.Wallpapers {
+		grid-column: 8 / span 5;
+		grid-row: 2 / span 1;
+		background: url("../../resources/wallpaperBg.jpg");
+		background-size: cover;
+		color: white;
+
+		h3 {
+			width: 136px;
+
+		}
+	} // Wallpapers
+
+	.Projects {
+		grid-column: 1 / span 6;
+		grid-row: 3 / span 1;
+		background: url("../../resources/projectsBg.jpg");
+		background-size: cover;
+		color: white;
+
+		h3 {
+			width: 110px;
+		}
+	} // Projects
+	
+	.Hiking {
+		grid-column: 7 / span 6;
+		grid-row: 3 / span 1;
+		background: url("../../resources/hike.jpg");
+		background-size: cover;
+		color: white;
+
+		h3 {
+			width: 64px;
+		}
+
+		.Hike1 {
+			display: block;
+		}
+		.Hike2 {
+			display: none;
+		}
+
+	} // Hiking
+
+	.Portfolio {
+		grid-column: 1 / span 12;
+		grid-row: 4 / span 1;
+		background: url("../../resources/portfolio.jpg");
+		background-size: auto auto;
+		color: white;
+
+		h3 {
+			width: 164px;
+		}
+
+
+	} // Portfolio
+
+	@include respond-to("small") {
+		margin-top: 72px;
+		grid-gap: 32px;
+		padding: 0px 0px 64px 0px;
+		width: 80%;
+		max-width: 900px;
+
+
+		// ~~ Grid layout ~~
+		.Connect {grid-column: 1 / span 4;grid-row: 1 / span 1;}
+		.Settings {grid-column: 5 / span 4;grid-row: 1 / span 1;}
+		.Message {grid-column: 9 / span 4;grid-row: 1 / span 1;}
+		.Music {grid-column: 1 / span 3;grid-row: 3 / span 1;}
+		.Wallpapers {grid-column: 4 / span 3;grid-row: 3 / span 1;}
+		.Projects {grid-column: 1 / span 6;grid-row: 2 / span 1;}
+		.Portfolio {grid-column: 1 / span 12;grid-row: 4 / span 1;}
+		.Hiking {
+			grid-column: 7 / span 6;
+			grid-row: 2 / span 2;
+
+			h3 {
+				width: 142px;
+			}
+
+			.Hike1 {
+			display: none;
+			}
+			.Hike2 {
+				display: block;
+			}
+		}
+
+	} // media query - small
+
+} // ContentContainer 

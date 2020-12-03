@@ -1,0 +1,289 @@
+
+.Dark {
+	background-color: rgba(0,0,0,1);
+	color: rgba(252, 252, 252, 1);
+
+	a {
+		text-decoration: none; 
+
+		&:hover{
+			color: white;
+		
+		} // a:hover
+
+		&:active{
+			color: white;
+
+		} // a:active 
+
+	} // a
+
+	.NavigationContainer {
+		background: rgb(255,255,255); // backup color
+		background: linear-gradient(0deg, 
+									rgba(252,252,252,1) 0%, 
+									rgba(252,252,252,1) 94%, 
+									rgba(212,212,212,0.4) 95%, 
+									rgba(19,19,19,0) 100%
+									);
+		filter: invert(1);
+		
+	} // NavigationContainer
+
+	.HomeContainer {
+		@include containerDark;
+
+	} // HomeContainer
+
+	.QuoteContainer {
+		@include containerDark;
+
+	} // QuoteContainer
+
+	// main navigation
+	.ContentContainer {
+			
+		.Connect, .Message, .Settings {
+			img{
+			filter: invert(1);
+
+			}
+		} // Dark icons
+
+		.Icon {
+			border-radius: 9px;
+			box-shadow: 0px 0px 4px 2px rgba(92,92,92,0.6);
+			transition: 0.14s;
+
+			&:hover {
+				background-color: rgba(19,19,19,1);
+			} // Icon:hover 
+
+		} // a 
+
+		.Bg {
+			border-radius: 9px;
+			box-shadow: 0px 0px 8px 3px rgba(92,92,92,0.66);
+			transition: 0.33s;
+
+			&:hover {
+				box-shadow: 0px 0px 2px 2px rgba(92,92,92,0.66);
+			} // Bg:hover 
+
+			&:active {
+				box-shadow: 0px 0px 2px 4px rgba(92,92,92,0.66);
+
+			} // Bg:active
+
+		} // Bg
+
+	} // ContentContainer
+
+	.ConnectContainer {
+
+		.Links {
+
+			a, .Goback {
+				border: 1px rgba(0,0,0,0) solid;
+				border-radius: 6px;
+				transition: 0.125s;
+
+				&:hover {
+					border: 1px rgba(128,128,128,0.8) solid;
+					box-shadow: 0px 0px 12px rgba(216,216,216,0.33);
+					background-color: rgba(92,92,92,0.33);
+				
+				}
+
+			} // a - Goback
+
+			.Github, .Goback, .Email {
+				filter: invert(1);
+
+				&:hover {
+					box-shadow: 0px 0px 12px white;
+				}
+
+			} // Github, Goback, Email
+
+		} // Links
+
+	} // ConnectContainer
+
+	.SettingsContainer {
+		@include containerDark;
+
+	} // SettingsContainer
+
+	.WallpapersContainer {
+		@include containerDark;
+
+		.Categories {
+
+			a {
+				border: 1px rgba(252,252,252,0.5) solid;
+				background-color: black;
+
+			} // a
+
+		} // Categories
+
+	} // WallpapersContainer
+
+
+	.PortfolioContainer {
+		margin-bottom: 3rem; // fixes spacing bug
+
+		.Head {
+			@include containerDark;
+
+			.Title {
+				p {
+					color: white;
+				} // p
+			} // Title
+
+			.PHP, .Solidity {
+				filter: invert(1);
+			}
+
+		} // Head
+
+		.Project{
+			@include containerDark;
+			height: 100%;
+
+		} // Project
+			
+		.Backend{
+			@include containerDark;
+
+			p {
+				color: white;
+			}
+
+		} // BackEnd
+
+	} // PortfolioContainer
+
+	.ProjectsContainer {
+
+		.Box{
+			@include containerDark;
+			transition: 0.15s;
+			cursor: pointer;
+			box-shadow: 0px 0px 4px 2px rgba(192,192,192,0.33);
+
+			&:hover {
+				background: rgba(92,92,96,0.2);
+				box-shadow: 0px 0px 12px 3px rgba(192,192,192,0.42);
+
+			} // Box:hover
+
+		} // Box
+
+	} // BlogContainer
+
+
+	.EmailContainer {
+		@include containerDark;
+		border: 3px black solid;
+
+	} // EmailContainer
+
+	.BlogContainer {
+
+		.Box{
+			@include containerDark;
+			transition: 0.15s;
+			cursor: pointer;
+			box-shadow: 0px 0px 4px 2px rgba(92,92,92,0.33);
+
+			.BlogTitle {
+				h3 {
+					color: #e50050;
+				} // h3
+			} // BlogTitle
+
+			&:hover {
+				box-shadow: 0px 0px 9px 3px rgba(92,92,92,1);
+
+			} // Box:hover
+
+		} // Box
+
+	} // BlogContainer
+
+	.HikingContainer {
+			
+		.Box {
+			@include containerDark;
+			transition: 0.15s;
+
+			&:hover {
+				box-shadow: 0px 0px 9px 6px rgba(192,192,192,0.33);
+			}
+
+		} // Box
+
+	} // HikingContainer
+
+
+	.HikingSpotContainer {
+		@include containerDark;
+		
+		.Title {
+			text-align: center;
+
+		} // Title
+		
+	} // HikingSpotContainer
+
+	.ColoradoContainer, .MontanaContainer {
+		margin-bottom: 5rem;
+	}
+
+	.MicroNutritionContainer {
+		@include containerDark;
+
+	} // MicroNutritionContainer
+
+	.UserApiContainer {
+		@include containerDark;
+
+		.Title {
+			p{
+				color: rgba(252,252,252,0.8);
+			}
+		} // Title
+
+		.Article {
+			.Intro {
+				.Text1, .Text4 {
+					color: white;
+				}
+			} // Intro
+
+			.Goal {
+				box-shadow: 0px 0px 5px 2px rgba(252,242,242,0.33);
+				h5 {
+					color: rgba(242,242,252,1);
+				}
+			} // Goal
+		} // Article 
+
+	} // UserApiContainer
+
+	.WebsiteContainer {
+		@include containerDark;
+
+	} // WebsiteContainer
+
+	// ~~~~~~~~~~~~
+
+	.LofiYouTubeContainer {
+		margin: 72px auto;
+		@include containerDark;
+	}
+
+} // Dark Theme

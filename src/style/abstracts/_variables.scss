@@ -1,0 +1,28 @@
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// Colors
+$space-grey: linear-gradient(90deg, rgba(52,61,70,1) 0%, rgba(79,91,102,1) 50%, rgba(52,61,70,1) 100%);
+$space-grey2: rgba(6,12,16,1);
+$space-grey3: radial-gradient(circle, rgba(52,61,70,1) 0%, rgba(79,91,102,1) 32%, rgba(52,61,70,0.8) 100%);
+$space-grey4: radial-gradient(circle, rgba(52,61,70,1) 0%, rgba(79,91,102,1) 30%, rgba(52,61,70,0.75) 100%);
+$text-color: rgb(19, 19, 19) !default;
+$brand-color: rgb(229, 0, 80) !default;
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+$breakpoints: (
+  'small': (min-width: 750px),
+  'medium': (min-width: 1380px),
+  'HD': (min-width: 1920px),
+  '2k': (min-width: 2500px),
+) !default;
+

@@ -1,0 +1,167 @@
+.PortfolioContainer {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 42px;
+
+	.Head {
+		margin: 42px auto 0px auto;
+	
+			.Languages {
+			width: 100%;
+			height: 50vh;
+			margin: 0px auto;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-content: space-between;
+			grid-gap: 12px;
+			overflow: auto;
+			max-height: 6.9em;
+
+			div {
+				width: 100%;
+				min-width: 33%;
+				
+				img {
+					height: 2.8em;
+				} // img
+				
+			} // div
+
+		} // Languages
+
+	} // Head
+
+	.Project {
+		max-width: 350px;
+		margin: 0px auto;
+		padding: 2px 32px;
+
+		a {
+
+			img {
+				border-radius: 12px;
+				max-width: 100%;
+				max-height: 300px;			
+
+			} // img
+		
+		} // a
+
+		.Description {
+			font-size: 1.2rem;
+		} // Description
+
+		.Conway {
+
+			p:first-of-type {
+				grid-column: 1 / span 2;
+			}// Conway:first(p)
+
+		} // Conway
+
+	} // Project
+
+	.Backend {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0px auto 64px auto;
+
+		.Title {
+			grid-column: 1 / span 2;
+
+			img {
+				max-height: 128px;
+			} // img
+
+		} // Title
+
+		a {
+			padding: 0px 6px;
+			margin: 1px;
+			transition: 0.14s;	
+			border-radius: 10%;
+			text-decoration: none;
+
+			.Description {
+				color: black;
+
+				p {
+					max-width: 200px;
+					margin: 0px auto;
+					font-size: 1rem;
+				}
+			}
+
+		} // a
+
+	} // Backend
+
+
+	@include respond-to("small") {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		margin-top: 72px;
+		grid-gap: 32px;
+		padding: 0px 24px;
+
+		.Head {
+			margin: auto;
+			height: 100%;
+
+			.Title {
+
+				h2 {
+					line-height: 1rem;
+					display: none;
+				}
+
+				p {
+					font-size: 1.25rem;
+				}
+
+			} // Title
+
+			.Languages {
+				overflow: unset;
+			}
+		
+		} // Head
+
+		.Backend {
+			height: 100%;
+
+		} // Backend
+
+		.Head{grid-column: 1 / span 6;grid-row: 1 / span 1;}
+		.Marketing{grid-column: 7 / span 6;grid-row: 1 / span 1;}
+		.WebGL{grid-column: 1 / span 6;grid-row: 2 / span 1;}
+		.Backend{grid-column: 7 / span 6;grid-row: 2 / span 1;}
+
+		.Separator {
+			display: none;
+		}
+
+	} // media query - small
+
+	@include respond-to("medium") {
+
+		.Head {
+
+			.Title {
+				p {
+					font-size: 1.8rem;
+					font-weight: 600;
+					color: rgb(92,92,92);
+				}
+			} // Title
+
+		} // Head
+
+		.Head{grid-column: 1 / span 3;grid-row: 1 / span 1;}
+		.Marketing{grid-column: 4 / span 3;grid-row: 1 / span 1;}
+		.WebGL{grid-column: 7 / span 3;grid-row: 1 / span 1;}
+		.Backend{grid-column: 10 / span 3;grid-row: 1 / span 1;}
+	}
+
+} // PortfolioContainer

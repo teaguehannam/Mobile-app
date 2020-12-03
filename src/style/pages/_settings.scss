@@ -1,0 +1,15 @@
+.SettingsContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 32px auto 72px auto;
+	text-align: center;
+	height: 100%;
+	padding-bottom: 5rem;
+
+	.Box {
+		min-height: 100px;
+		padding-bottom: 32px;
+
+	} // Box
+
+} // SettingsContainer

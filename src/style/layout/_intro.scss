@@ -1,0 +1,80 @@
+.IntroContainer {
+	padding-top: 9px;
+
+
+	.Title {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		h1, h2{
+			margin: 0;
+			padding: 0;
+			font-size: 1.5rem;
+			line-height: 2.25rem;
+		} // h1, h2
+
+		h1 {
+			padding-left: 6px;
+		} // h1
+
+	} // Title
+
+	.Intro {
+		padding-bottom: 0.5rem;
+
+		p {
+			font-size: 1.125rem;
+
+		} // p
+
+		.Links {
+			display: flex;
+			justify-content: space-around;
+			grid-gap: 12px;
+			margin: 0px auto;
+			max-width: 300px;
+
+			a {
+				font-size: 1.125rem;
+				line-height: 2.25rem;
+				border-top: 1px grey solid;
+				border-bottom: 1px grey solid;
+				min-width: 120px;
+				text-decoration: none;
+
+			} // a
+
+		} // Links
+
+	} // Subtitle
+
+	@include respond-to("small") {
+
+		.Title {
+			h1, h2 {
+				font-size: 2rem;
+				line-height: 2.75rem;
+			}
+			h1 {
+				padding-left: 8px;
+			}
+		} // Title
+
+		.Intro {
+			p{
+				font-size: 1.25rem;
+				line-height: 1.5rem;
+			}
+
+			.Links {
+				max-width: 400px;
+				a {
+					font-size: 1.33rem;
+				}
+			}
+		}
+
+
+	} // media query - small
+} // IntroContainer

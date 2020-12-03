@@ -1,0 +1,61 @@
+
+.ConnectContainer {
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+	padding: 2rem 0px 5rem 0px;
+
+	.Links {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		justify-content: space-around;
+		grid-gap: 12px;
+		padding: 12px;
+		height: 100%;
+
+		a, .Goback {
+			padding-top: 12px;
+			cursor: pointer;
+
+			img {
+				margin: 24px 0px;
+				height: 57px;				
+
+			} // img
+			
+		} // Box - a
+
+		.Spotify {grid-column: 7 / span 6;grid-row: 1  / span 2;}
+		.SoundCloud {grid-column: 1 / span 6;grid-row: 1 / span 2;}
+		.Github {grid-column: 5 / span 4;grid-row: 3 / span 2;}
+		.LinkedIn {grid-column: 1 / span 4;grid-row: 3 / span 2;}
+		.Youtube {grid-column: 9 / span 4;grid-row: 3 / span 2;}
+		.Email {grid-column: 7 / span 6;grid-row: 5 / span 1;}
+		.Goback {grid-column: 1 / span 6;grid-row: 5 / span 1;}
+
+	} // Links
+
+	@include respond-to("small") {
+		margin-top: 42px;
+		max-width: 800px;
+		height: 100vh;
+		max-height: 600px;
+
+		.Links {
+
+			a, .Goback {
+				border: 1px rgba(19,19,19,0) solid;
+				border-radius: 9px;
+				transition: 0.3s;
+
+				&:hover{
+					border: 1px rgba(19,19,19,0.3) solid;
+
+				}
+
+			}
+		}
+	}
+
+} // ConnectContainer

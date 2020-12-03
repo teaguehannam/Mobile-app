@@ -1,0 +1,159 @@
+
+.Light {
+	background-color: rgba(252,252,252,1);
+	color: rgba(19, 19, 19, 1);
+
+	.HomeContainer {
+		@include containerLight;
+	} // HomeContainer
+
+	.QuoteContainer {
+		@include containerLight;
+			
+	} // QuoteLogic
+
+	.ContentContainer {
+		
+		.Icon {
+			border-radius: 9px;
+			box-shadow: 0px 0px 4px 2px grey;
+			transition: 0.14s;
+
+			&:hover {
+				background-color: rgba(242,242,242,1);
+			} // Icon:hover 
+
+		} // .Icon
+
+		.Bg {
+			border-radius: 9px;
+			box-shadow: 0px 0px 8px 3px grey;
+			transition: 0.33s;
+
+			&:hover {
+				box-shadow: 0px 0px 2px 2px grey;
+			} // Bg:hover 
+
+			&:active {
+				box-shadow: 0px 0px 2px 2px grey;
+
+			} // Bg:active
+
+		} // Bg
+
+	} // ContentContainer
+
+	.ConnectContainer {
+		
+	} // ConnectContainer
+
+	.SettingsContainer {
+		@include containerLight;
+
+	} // SettingsContainer
+
+	.WallpapersContainer {
+		@include containerLight;
+
+	} // WallpapersContainer
+
+	.PortfolioContainer {
+		margin-bottom: 3rem; // fixes spacing bug
+
+		.Head {
+			@include containerLight;
+
+		} // Head
+
+		.Project{
+			@include containerLight;
+
+		} // Project
+			
+		.Backend{
+			@include containerLight;
+
+		} // BackEnd
+
+	} // PortfolioContainer
+
+	.EmailContainer {
+		@include containerLight;
+		border: 3px white solid;
+	}
+
+	.ProjectsContainer {
+
+		.Box{
+			@include containerLight;
+			transition: 0.15s;
+			cursor: pointer;
+			box-shadow: 0px 0px 4px 2px rgba(192,192,192,0.33);
+
+			.BlogTitle {
+				h3 {
+					color: #e50050;
+				} // h3
+			} // BlogTitle
+
+			&:hover {
+				box-shadow: 0px 0px 12px 3px rgba(192,192,192,1);
+
+			} // Box:hover
+
+		} // Box
+
+	} // BlogContainer
+
+	.HikingContainer {
+		.Box {
+			@include containerLight;
+			transition: 0.15s;
+
+			&:hover {
+				box-shadow: 0px 0px 12px 6px rgba(92,92,92,0.25);
+			}
+
+		} // Box
+	} // HikingContainer
+
+	.HikingSpotContainer {
+		.Title {
+			text-align: center;
+
+		}
+		@include containerLight;
+		
+	} // HikingSpotContainer
+
+	.ColoradoContainer, .MontanaContainer {
+		margin-bottom: 5rem;
+	}
+
+
+	// ~~~ BLOGS ~~~
+
+	.MicroNutritionContainer {
+		@include containerLight;
+
+	} // MicroNutritionContainer
+
+	.UserApiContainer {
+		@include containerLight;
+
+	} // UserApiContainer
+
+	.WebsiteContainer {
+		@include containerLight;
+
+	} // WebsiteContainer
+
+	// ~~~~~~~~~~~~
+
+	.LofiYouTubeContainer {
+		margin: 72px auto;
+		@include containerLight;
+	}
+
+
+} // Light

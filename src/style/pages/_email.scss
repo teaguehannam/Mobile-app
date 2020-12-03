@@ -1,0 +1,67 @@
+.EmailContainer {
+	text-align: center;
+	padding: 12px 4px 5rem 4px;
+	margin: 24px auto 72px auto;
+
+	.Title {
+		line-height: 1rem;
+
+	} // Title
+
+	.UserInfo {
+		margin: 0px auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		min-width: 300px;
+
+		p {
+			text-align: center;
+			margin: 0.75rem;
+
+		} //p
+
+		input {
+			max-width: 400px;
+			text-align: center;
+			margin: 0px auto;
+			min-width: 100px;
+			width: 60%;
+		
+		} // input
+
+	} // Content
+
+	.MessageContainer {
+		min-width: 300px;
+		max-width: 100%;
+		min-height: 120px;
+		max-height: 100%;
+		margin: 0px auto;
+
+		p {
+			margin: 0.75rem;
+
+		} // p
+
+	} // MessageContainer
+
+
+	.SubmitButton {
+		padding: 1rem 0px;
+
+		input {
+			width: 100%;
+			max-width: 175px; 
+			height: 50px;
+			margin: 0;
+		
+		} // input
+
+	} // SubmitButton
+
+	@include respond-to("small"){
+		margin: 72px auto 57px auto;
+		
+	}
+
+} // EmailContainer

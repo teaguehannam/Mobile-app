@@ -1,0 +1,18 @@
+// Individual wallpaper container
+.WallpaperDisplayContainer {
+	display: flex;
+	flex-wrap: wrap;
+	grid-template-columns: repeat(3, 1fr);
+
+	div {
+		margin: 0px auto;
+
+		img{
+			max-height: calc(100vh - 64px);
+			max-width: 42px;
+
+		} // img
+
+	} // div 
+
+} // WallpaperDisplayContainer

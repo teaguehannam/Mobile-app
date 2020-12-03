@@ -1,0 +1,254 @@
+
+.SpaceGrey {
+	background: $space-grey2;
+	color: rgba(252,252,252,1);
+
+	a {
+		text-decoration: none; 
+		color: rgba(244,234,252,1);
+
+		&:hover{
+			color: white;
+		
+		} // a:hover
+
+		&:active{
+			color: white;
+
+		} // a:active 
+
+	} // a
+
+	.NavigationContainer {
+		background: $space-grey;
+		box-shadow: 0px 0px 12px 3px rgba(92,92,92,0.5);
+
+		img {
+			filter: invert(1);
+		}
+	}
+
+	.HomeContainer {
+		@include containerSpaceGrey;
+	} // HomeContainer
+
+	.QuoteContainer {
+		@include containerSpaceGrey;
+
+		h1 {
+			color: $space-grey2;
+		}
+			
+	} // QuoteLogic
+
+	.ContentContainer {
+		
+		.Icon {
+			border-radius: 9px;
+			box-shadow: 0px 0px 12px 3px rgba(92,92,92,0.5);
+			transition: 0.1s;
+			background: $space-grey3;
+
+			&:hover {
+				box-shadow: 0px 0px 3px 3px rgba(92,92,92,0.25);
+				background: $space-grey4;
+				
+
+			} // Icon:hover 
+
+		} // .Icon
+
+		.Bg {
+			border-radius: 9px;
+			box-shadow: 0px 0px 8px 3px rgba(92,92,92,0.6);
+			transition: 0.33s;
+
+			&:hover {
+				box-shadow: 0px 0px 2px 2px rgba(92,92,92,0.4);
+			} // Bg:hover 
+
+			&:active {
+				box-shadow: 0px 0px 2px 2px rgba(92,92,92,0.2);
+
+			} // Bg:active
+
+		} // Bg
+
+		.Connect, .Settings {
+			img{
+				filter: invert(1);
+			}
+		}
+
+	} // ContentContainer
+
+	.ConnectContainer {
+		.Links {
+
+			a, .Goback {
+				border: 1px rgba(0,0,0,0) solid;
+				border-radius: 6px;
+				transition: 0.125s;
+
+				&:hover {
+					border: 1px rgba(128,128,128,0.8) solid;
+					box-shadow: 0px 0px 12px rgba(216,216,216,0.33);
+					background-color: rgba(92,92,92,0.33);
+				
+				}
+
+			} // a - Goback
+
+			.Github, .Goback, .Email {
+				filter: invert(1);
+
+				&:hover {
+					box-shadow: 0px 0px 12px white;
+				}
+
+			} // Github, Goback, Email
+
+		} // Links
+		
+	} // ConnectContainer
+
+	.SettingsContainer {
+		@include containerSpaceGrey;
+
+	} // SettingsContainer
+
+	.WallpapersContainer {
+		@include containerSpaceGrey;
+
+	} // WallpapersContainer
+
+	.PortfolioContainer {
+		margin-bottom: 3rem; // fixes spacing bug
+
+		.Head {
+			@include containerSpaceGrey;
+
+			.Title {
+				p {
+					color: white;
+				} // p
+			} // Title
+
+			.PHP, .Solidity {
+				filter: invert(1);
+			}
+
+		} // Head
+
+		.Project{
+			@include containerSpaceGrey;
+			height: 100%;
+
+		} // Project
+			
+		.Backend{
+			@include containerSpaceGrey;
+
+			p {
+				color: white;
+			}
+
+		} // BackEnd
+
+	} // PortfolioContainer
+
+	.EmailContainer {
+		@include containerSpaceGrey;
+	}
+
+	.ProjectsContainer {
+
+		.Box{
+			@include containerSpaceGrey;
+			transition: 0.15s;
+			cursor: pointer;
+			box-shadow: 0px 0px 4px 2px rgba(192,192,192,0.33);
+
+			&:hover {
+				box-shadow: 0px 0px 12px 3px rgba(192,192,192,0.42);
+
+			} // Box:hover
+
+		} // Box
+
+	} // BlogContainer
+
+	.HikingContainer {
+			
+		.Box {
+			@include containerDark;
+			transition: 0.15s;
+
+			&:hover {
+				box-shadow: 0px 0px 9px 6px rgba(192,192,192,0.33);
+			}
+
+		} // Box
+
+	} // HikingContainer
+
+	.HikingSpotContainer {
+		@include containerSpaceGrey;
+
+		.Title {
+			text-align: center;
+
+		}
+		
+	} // HikingSpotContainer
+
+	.ColoradoContainer, .MontanaContainer {
+		margin-bottom: 5rem;
+	}
+
+	// ~~~ BLOGS ~~~
+
+	.MicroNutritionContainer {
+		@include containerSpaceGrey;
+
+	} // MicroNutritionContainer
+
+	.UserApiContainer {
+		@include containerSpaceGrey;
+
+		.Title {
+			p{
+				color: rgba(252,252,252,0.8);
+			}
+		} // Title
+
+		.Article {
+			.Intro {
+				.Text1, .Text4 {
+					color: white;
+				}
+			} // Intro
+
+			.Goal {
+				box-shadow: 0px 0px 5px 2px rgba(252,242,242,0.33);
+				h5 {
+					color: rgba(242,242,252,1);
+				}
+			} // Goal
+		} // Article 
+
+	} // UserApiContainer
+
+	.WebsiteContainer {
+		@include containerSpaceGrey;
+
+	} // WebsiteContainer
+
+	// ~~~~~~~~~~~~
+
+	.LofiYouTubeContainer {
+		margin: 72px auto;
+		@include containerSpaceGrey;
+	}
+
+} // SpaceGrey

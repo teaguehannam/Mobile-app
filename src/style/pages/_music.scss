@@ -1,0 +1,19 @@
+.MusicContainer {
+	text-align: center;
+	padding-bottom: 64px;
+	max-width: 800px;
+	margin: 0px auto;
+
+	@include respond-to("small") {
+		margin-top: 48px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 24px;
+
+		.Title{
+			grid-column: 1 / span 2;
+
+		}
+	}
+
+} // MusicContainer

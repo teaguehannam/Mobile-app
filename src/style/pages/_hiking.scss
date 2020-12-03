@@ -1,0 +1,32 @@
+.HikingContainer {
+	max-width: 540px;
+	margin: 48px auto 84px auto;
+	display: grid;
+	grid-gap: 32px;
+
+	.Box {
+		margin: 0px auto;
+		background-size: cover;
+		cursor: pointer;
+
+		h2 {
+			color: white;
+		} // h2
+
+	} // Box
+
+	.Colorado {
+		background: url("../../resources/hike/colorado.jpg");
+	} // Colorado
+
+	.Montana {
+		background: url("../../resources/hike/montana.jpg");
+	} // Montana
+
+	@include respond-to("small") {
+		margin: 72px auto 32px auto;
+		grid-gap: 64px;
+
+	} // media query - small
+
+} // HomeContainer
