@@ -1,2 +1,2 @@
 # Mobile Web App
-##### Mobile first design, similar UI to Instagram
+##### Mobile first design, UI/UX inspired by Instagram
