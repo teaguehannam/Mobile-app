@@ -12,19 +12,19 @@ function Content() {
 				className="Connect Icon">
 					<img src={ConnectSVG} alt="Connect" />
 			</a>
-			<a 	href="/connect/email" 
-				className="Message Icon">
-					<img src={MessageSVG} alt="Message" />
-			</a>
 			<a 	href="/settings" 
 				className="Settings Icon">
 					<img src={SettingsSVG} alt="Settings" />
+			</a>
+			<a 	href="/connect/email" 
+				className="Message Icon">
+					<img src={MessageSVG} alt="Message" />
 			</a>
 			<a 	href="/wallpapers" 
 				className="Wallpapers Bg">
 					<h3>Wallpapers</h3>
 			</a>
-			<a 	href="/project" 
+			<a  href="https://portfolio.teaguehannam.com/projects" target="_blank"
 				className="Projects Bg">
 					<h3>Projects</h3>
 			</a>
@@ -37,9 +37,9 @@ function Content() {
 					<span className="Hike1"><h3>Hike</h3></span>
 					<span className="Hike2"><h3>Take a hike</h3></span>
 			</a>
-			<a 	href="/portfolio" 
+			<a 	href="https://portfolio.teaguehannam.com" target="_blank"
 				className="Portfolio Bg">
-					<h3>Web Portfolio</h3>
+					<h3>Work Portfolio</h3>
 			</a>
 
 		</div>

@@ -1,23 +1,19 @@
 import React from 'react';
-
 import AllPhotos from '../../data/LoadImages.js';
 import WallpaperDisplay from '../../components/WallpaperDisplay.js';
 
-const PlacesPhotos = AllPhotos.SpacePhotos;
+const UniversePhotos = AllPhotos.Universe;
 
-const Places = () => {
-
+const Universe = () => {
 	return (
 		<div className="CategoryContainer">
-
 			{
-				PlacesPhotos.map((el, i) => (
-					<WallpaperDisplay key={el.id} data={el} folder="Places" />
+				UniversePhotos.map((el, i) => (
+					<WallpaperDisplay key={el.id} data={el} folder="Universe" />
 				))
 			}
-
 		</div>
 	)
 }
 
-export default Places;
+export default Universe;

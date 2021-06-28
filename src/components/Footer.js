@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <div className="FooterContainer">
-      <p>©TeaHann 2020</p>
+      <p>Teague Hannam LLC 2020</p>
     </div>
   );
 }

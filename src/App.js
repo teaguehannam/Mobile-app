@@ -11,7 +11,6 @@ import Connect from './pages/Connect.js';
 import Email from './pages/Email.js';
 import Music from './pages/Music.js';
 
-import Portfolio from './pages/Portfolio.js';
 import Settings from './pages/Settings.js';
 
 import Hiking from './pages/Hiking.js';
@@ -28,14 +27,14 @@ import Wallpapers from './pages/Wallpapers.js';
 import Animal from './pages/wallpapers/Animal.js';
 import Information from './pages/wallpapers/Information.js';
 import Places from './pages/wallpapers/Places.js';
-import Space from './pages/wallpapers/Space.js';
+import Universe from './pages/wallpapers/Universe.js';
 
 function App() {
 
 	let cookieTheme = reactLocalStorage.get('Theme');
 	let currentTheme = document.getElementsByTagName("body")[0].className;
 
-	// Body class doesn't match set theme
+	// Body class doesn't match localStorage theme
 	if(cookieTheme != currentTheme) {
 		document.getElementsByTagName("body")[0].classList.remove(currentTheme);
 		document.getElementsByTagName("body")[0].classList.add(cookieTheme);
@@ -60,19 +59,12 @@ function App() {
 			<Route exact path="/hiking/colorado" component={Colorado} />
 			<Route exact path="/hiking/montana" component={Montana} />
 
-			<Route exact path="/project" component={Projects} />
-			<Route exact path="/project/user-api" component={UserApi} />
-			<Route exact path="/project/micro-nutrition" component={MicroNutrition} />
-			<Route exact path="/project/lofi-youtube" component={LofiYouTube} />
-			<Route exact path="/project/website" component={Website} />
-
 			<Route exact path="/music" component={Music} />
-			<Route exact path="/portfolio" component={Portfolio} />
 			<Route exact path="/wallpapers" component={Wallpapers} />
 			<Route exact path="/wallpapers/animal" component={Animal} />
 			<Route exact path="/wallpapers/information" component={Information} />
 			<Route exact path="/wallpapers/places" component={Places} />
-			<Route exact path="/wallpapers/space" component={Space} />
+			<Route exact path="/wallpapers/universe" component={Universe} />
 		</div>
 	);
 }

@@ -10,14 +10,13 @@ const Email = () => {
 	
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		alert("Message not recieved :P\nCurrently working on messages")
+		alert("Message not recieved :P")
 	};
 
 	return (
 		<div className="EmailContainer">
 
 			<div className="Title">
-				<p>~ Not working! ~</p>
 				<h2>Message me</h2>
 			</div>
 

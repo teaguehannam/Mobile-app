@@ -5,11 +5,11 @@
 	bottom: 0;
 	background: rgb(255,255,255); // backup color
 	background: linear-gradient(0deg, 
-								rgba(252,252,252,1) 0%, 
-								rgba(252,252,252,1) 94%, 
-								rgba(212,212,212,0.4) 95%, 
-								rgba(19,19,19,0) 100%
-								);
+		rgba(252,252,252,1) 0%, 
+		rgba(252,252,252,1) 94%, 
+		rgba(212,212,212,0.4) 95%, 
+		rgba(19,19,19,0) 100%
+	);
 	height: 57px;
 	z-index: 10;
 
@@ -36,6 +36,7 @@
 
 	} // nav
 
+	// Desktop header
 	@include respond-to("small") {
 		height: 72px;
 		bottom: unset;
@@ -73,8 +74,6 @@
 			} // Link
 
 		} // nav
-
-
 
 	} // media query - small
 

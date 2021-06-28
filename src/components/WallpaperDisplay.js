@@ -1,20 +1,12 @@
 import React from 'react';
 
-import Photo from '../resources/icons/photo.svg';
-
 function WallpaperDisplay(props) {
-	console.log("WallpaperDisplay", props);
-	
+	let imgSrc = '/wallpapers/'+props.folder+'/'+props.data.src;
+	console.log(props);
+
 	return (
 		<div className="WallpaperDisplayContainer">
-
-			<div>
-				<img alt="imgsrc" src={Photo} />
-			</div>
-{/*
-			<img alt="imgsrc" src={require('../resources/wallpapers/' + props.folder + '/' + props.data.src)} />
-*/}
-
+			<img src={imgSrc} alt={props.data.src.slice(0, -4)} />
 		</div>
 	);
 }

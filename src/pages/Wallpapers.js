@@ -21,8 +21,8 @@ const Wallpapers = () => {
 					<h3>Places</h3>
 					<p>86mb</p>
 				</a>
-				<a href="/wallpapers/space">
-					<h3>Space</h3>
+				<a href="/wallpapers/universe">
+					<h3>Universe</h3>
 					<p>56mb</p>
 				</a>
 			</div>

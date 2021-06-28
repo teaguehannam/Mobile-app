@@ -12,10 +12,9 @@ const Intro = () => {
 
 			<div className="Intro">
 				<p>I enjoy building great user experiences</p>
-				<p>If you are looking for a web developer...</p>
 				<div className="Links">
-					<a href="/portfolio">View projects</a>
-					<a href="/connect/email">Message me</a>
+					<a href="/content">Content</a>
+					<a href="https://portfolio.teaguehannam.com/projects" target="_blank">Portfolio</a>
 				</div>
 			</div>
 
