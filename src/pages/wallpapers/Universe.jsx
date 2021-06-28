@@ -1,6 +1,6 @@
 import React from 'react';
 import AllPhotos from '../../data/LoadImages.js';
-import WallpaperDisplay from '../../components/WallpaperDisplay.js';
+import WallpaperDisplay from '../../components/WallpaperDisplay.jsx';
 
 const UniversePhotos = AllPhotos.Universe;
 

@@ -1,8 +1,8 @@
 // Navigate to type of content
 import React from 'react';
 
-import Theme from '../components/settings/Themes.js';
-import Background from '../components/settings/Background.js';
+import Theme from '../components/settings/Themes.jsx';
+import Background from '../components/settings/Background.jsx';
 
 function SettingsContainer() {
 	return (

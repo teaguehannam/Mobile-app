@@ -2,7 +2,7 @@ import React from 'react';
 
 // Data
 import HikingPlaces from '../../data/loadHiking.js';
-import HikingSpot from '../../components/HikingSpot.js';
+import HikingSpot from '../../components/HikingSpot.jsx';
 
 const Montana = () => {
 

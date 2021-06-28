@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Intro from '../components/Intro.js';
+import Intro from '../components/Intro.jsx';
 
 const Home = () => {
 

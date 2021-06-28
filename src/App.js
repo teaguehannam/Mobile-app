@@ -3,31 +3,31 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { reactLocalStorage } from 'reactjs-localstorage';
 
-import Navigation from './components/Navigation.js';
-import Home from './pages/Home.js';
+import Navigation from './components/Navigation.jsx';
+import Home from './pages/Home.jsx';
 
-import Content from './pages/Content.js';
-import Connect from './pages/Connect.js';
-import Email from './pages/Email.js';
-import Music from './pages/Music.js';
+import Content from './pages/Content.jsx';
+import Connect from './pages/Connect.jsx';
+import Email from './pages/Email.jsx';
+import Music from './pages/Music.jsx';
 
-import Settings from './pages/Settings.js';
+import Settings from './pages/Settings.jsx';
 
-import Hiking from './pages/Hiking.js';
-import Colorado from './pages/hiking/Colorado.js';
-import Montana from './pages/hiking/Montana.js';
+import Hiking from './pages/Hiking.jsx';
+import Colorado from './pages/hiking/Colorado.jsx';
+import Montana from './pages/hiking/Montana.jsx';
 
-import Projects from './pages/Projects.js';
-import UserApi from './pages/project/UserApi.js';
-import MicroNutrition from './pages/project/MicroNutrition.js';
-import Website from './pages/project/Website.js';
-import LofiYouTube from './pages/project/LofiYouTube.js';
+import Projects from './pages/Projects.jsx';
+import UserApi from './pages/project/UserApi.jsx';
+import MicroNutrition from './pages/project/MicroNutrition.jsx';
+import Website from './pages/project/Website.jsx';
+import LofiYouTube from './pages/project/LofiYouTube.jsx';
 
-import Wallpapers from './pages/Wallpapers.js';
-import Animal from './pages/wallpapers/Animal.js';
-import Information from './pages/wallpapers/Information.js';
-import Places from './pages/wallpapers/Places.js';
-import Universe from './pages/wallpapers/Universe.js';
+import Wallpapers from './pages/Wallpapers.jsx';
+import Animal from './pages/wallpapers/Animal.jsx';
+import Information from './pages/wallpapers/Information.jsx';
+import Places from './pages/wallpapers/Places.jsx';
+import Universe from './pages/wallpapers/Universe.jsx';
 
 function App() {
 
